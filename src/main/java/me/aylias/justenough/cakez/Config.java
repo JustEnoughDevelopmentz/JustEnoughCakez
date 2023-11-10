@@ -1,4 +1,4 @@
-package me.aylias.justenough;
+package me.aylias.justenough.cakez;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;

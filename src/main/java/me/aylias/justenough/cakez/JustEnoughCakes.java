@@ -1,4 +1,4 @@
-package me.aylias.justenough;
+package me.aylias.justenough.cakez;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.color.block.BlockColor;
@@ -26,39 +26,74 @@ public class JustEnoughCakes {
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public static ItemColor itemColor = (itemStack, p_92673_) -> {
-        if (itemStack.getItem().getDescriptionId().contains("white_basic"))
-            return 0xffffff;
-        else if (itemStack.getItem().getDescriptionId().contains("orange_basic"))
-            return 0xff7700;
-        else if (itemStack.getItem().getDescriptionId().contains("magenta_basic"))
-            return 0xF700F7;
-        else if (itemStack.getItem().getDescriptionId().contains("light_blue_basic"))
-            return 0x00a2ff;
-        else if (itemStack.getItem().getDescriptionId().contains("yellow_basic"))
-            return 0xeeff00;
-        else if (itemStack.getItem().getDescriptionId().contains("lime_basic"))
-            return 0xeeff00;
-        else if (itemStack.getItem().getDescriptionId().contains("pink_basic"))
-            return 0xff0099;
-        else if (itemStack.getItem().getDescriptionId().contains("light_gray_basic"))
-            return 0xadadad;
-        else if (itemStack.getItem().getDescriptionId().contains("gray_basic"))
-            return 0x707070;
-        else if (itemStack.getItem().getDescriptionId().contains("cyan_basic"))
-            return 0x00ffee;
-        else if (itemStack.getItem().getDescriptionId().contains("purple_basic"))
-            return 0xae00ff;
-        else if (itemStack.getItem().getDescriptionId().contains("blue_basic"))
-            return 0x002fff;
-        else if (itemStack.getItem().getDescriptionId().contains("brown_basic"))
-            return 0x75502b;
-        else if (itemStack.getItem().getDescriptionId().contains("green_basic"))
-            return 0x2b702d;
-        else if (itemStack.getItem().getDescriptionId().contains("red_basic"))
-            return 0xe84b3c;
-        else if (itemStack.getItem().getDescriptionId().contains("black_basic"))
-            return 0x000;
+    public static ItemColor itemColor = (itemStack, tintIndex) -> {
+        if (tintIndex == 0) {
+            if (itemStack.getItem().getDescriptionId().contains("white_basic"))
+                return 0xffffff;
+            else if (itemStack.getItem().getDescriptionId().contains("orange_basic"))
+                return 0xff7700;
+            else if (itemStack.getItem().getDescriptionId().contains("magenta_basic"))
+                return 0xF700F7;
+            else if (itemStack.getItem().getDescriptionId().contains("light_blue_basic"))
+                return 0x00a2ff;
+            else if (itemStack.getItem().getDescriptionId().contains("yellow_basic"))
+                return 0xeeff00;
+            else if (itemStack.getItem().getDescriptionId().contains("lime_basic"))
+                return 0xeeff00;
+            else if (itemStack.getItem().getDescriptionId().contains("pink_basic"))
+                return 0xff0099;
+            else if (itemStack.getItem().getDescriptionId().contains("light_gray_basic"))
+                return 0xadadad;
+            else if (itemStack.getItem().getDescriptionId().contains("gray_basic"))
+                return 0x707070;
+            else if (itemStack.getItem().getDescriptionId().contains("cyan_basic"))
+                return 0x00ffee;
+            else if (itemStack.getItem().getDescriptionId().contains("purple_basic"))
+                return 0xae00ff;
+            else if (itemStack.getItem().getDescriptionId().contains("blue_basic"))
+                return 0x002fff;
+            else if (itemStack.getItem().getDescriptionId().contains("brown_basic"))
+                return 0x75502b;
+            else if (itemStack.getItem().getDescriptionId().contains("green_basic"))
+                return 0x2b702d;
+            else if (itemStack.getItem().getDescriptionId().contains("red_basic"))
+                return 0xe84b3c;
+            else if (itemStack.getItem().getDescriptionId().contains("black_basic"))
+                return 0x000;
+        } else if (tintIndex == 1) {
+            if (itemStack.getItem().getDescriptionId().contains("white_candle"))
+                return 0xffffff;
+            else if (itemStack.getItem().getDescriptionId().contains("orange_candle"))
+                return 0xff7700;
+            else if (itemStack.getItem().getDescriptionId().contains("magenta_candle"))
+                return 0xF700F7;
+            else if (itemStack.getItem().getDescriptionId().contains("light_blue_candle"))
+                return 0x00a2ff;
+            else if (itemStack.getItem().getDescriptionId().contains("yellow_candle"))
+                return 0xeeff00;
+            else if (itemStack.getItem().getDescriptionId().contains("lime_candle"))
+                return 0xeeff00;
+            else if (itemStack.getItem().getDescriptionId().contains("pink_candle"))
+                return 0xff0099;
+            else if (itemStack.getItem().getDescriptionId().contains("light_gray_candle"))
+                return 0xadadad;
+            else if (itemStack.getItem().getDescriptionId().contains("gray_candle"))
+                return 0x707070;
+            else if (itemStack.getItem().getDescriptionId().contains("cyan_candle"))
+                return 0x00ffee;
+            else if (itemStack.getItem().getDescriptionId().contains("purple_candle"))
+                return 0xae00ff;
+            else if (itemStack.getItem().getDescriptionId().contains("blue_candle"))
+                return 0x002fff;
+            else if (itemStack.getItem().getDescriptionId().contains("brown_candle"))
+                return 0x75502b;
+            else if (itemStack.getItem().getDescriptionId().contains("green_candle"))
+                return 0x2b702d;
+            else if (itemStack.getItem().getDescriptionId().contains("red_candle"))
+                return 0xe84b3c;
+            else if (itemStack.getItem().getDescriptionId().contains("black_candle"))
+                return 0x000;
+        }
         return 0xffffff;
     };
 

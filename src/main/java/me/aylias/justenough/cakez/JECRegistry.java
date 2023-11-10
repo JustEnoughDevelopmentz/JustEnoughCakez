@@ -1,7 +1,7 @@
-package me.aylias.justenough;
+package me.aylias.justenough.cakez;
 
 import com.mojang.logging.LogUtils;
-import me.aylias.justenough.blocks.CustomCakeBlock;
+import me.aylias.justenough.cakez.blocks.CustomCakeBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
@@ -21,7 +21,7 @@ import org.slf4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
-import static me.aylias.justenough.JustEnoughCakes.MODID;
+import static me.aylias.justenough.cakez.JustEnoughCakes.MODID;
 
 
 public class JECRegistry {
